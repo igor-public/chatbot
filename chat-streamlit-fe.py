@@ -1,5 +1,5 @@
 import streamlit as st 
-import  chatbot_backend as test_chat  
+import  llm_bedrock_be as test_chat  
 
 # title - https://docs.streamlit.io/library/api-reference/text/st.title
 st.title("Test Chat") 
