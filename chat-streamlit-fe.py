@@ -4,6 +4,11 @@ import  llm_bedrock_be as test_chat
 # title - https://docs.streamlit.io/library/api-reference/text/st.title
 st.title("Test Chat") 
 
+
+uploaded_file = st.file_uploader('Choose your .pdf file', type="pdf")
+# if uploaded_file is not None:
+#     df = extract_data(uploaded_file)
+
 # langchain for the session State - https://docs.streamlit.io/library/api-reference/session-state
 if 'memory' not in st.session_state: 
     st.session_state.memory = test_chat.memory_llm()
